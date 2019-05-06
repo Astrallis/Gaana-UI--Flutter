@@ -1,0 +1,150 @@
+class Wid extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    _portraitModeOnly();
+    final double deviceheight = MediaQuery.of(context).size.height;
+    final double devicewidth = MediaQuery.of(context).size.width;
+    return Scaffold(
+      backgroundColor: Colors.black12,
+      body: Column(
+        children: <Widget>[
+          Container(
+            height: 600,
+            child: CustomScrollView(slivers: <Widget>[
+              SliverAppBar(
+                expandedHeight: 40,
+                elevation: 0,
+                floating: true,
+                flexibleSpace: FlexibleSpaceBar(
+                  background: Image.asset("assets/sliverbg.jpg"),
+                ),
+                title: Container(
+                  child: Image.asset(
+                    "assets/sliverbg.png",
+                    scale: 35,
+                  ),
+                ),
+              ),
+              SliverList(
+                delegate: SliverChildListDelegate([
+                  Container(
+                    height: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          Container(
+            height: deviceheight-600,color: Color(0xff1b1b1b),
+          )
+        ],
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+
+        items: <BottomNavigationBarItem>[
+        BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
+        BottomNavigationBarItem(icon: Icon(Icons.mic_none), title: Text('Search')),
+        BottomNavigationBarItem(icon: Icon(Icons.radio), title: Text('Radio')),
+        BottomNavigationBarItem(icon: Icon(Icons.music_video), title: Text('My Music')),
+        ],
+
+        currentIndex: 0,
+        fixedColor: Colors.black,
+        onTap: null,),
+    );
+  }
+}
