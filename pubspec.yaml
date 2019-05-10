@@ -44,7 +44,7 @@ flutter:
   fonts:
     - family: Helvetica
       fonts:
-
+        - asset: assets/Helvetica.ttf
         - asset: assets/Helvetica-Bold.ttf
 
 
@@ -52,6 +52,7 @@ flutter:
   assets:
     - sliverbg.png
     - sliverbg.jpg
+    - play button.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
